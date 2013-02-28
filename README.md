@@ -19,13 +19,14 @@ Key properties :
 
 1. Used regular expression class 're'
 2. The pattern used is ('(https?://\S+)', text['text']) which means all the terms starting with https:// and make sure the terms in url are not matched further in the text if present
+3. Used re.findall function which finds all the terms related to the given expression
 3. Unique urls has been derived by putting the duplicate set of list into a set which takes unique values.
 4. The performance of the application is of the order O(n) and it is fast to process.
 
 Assumptions :
 
 1. The urls starts with http:// and https://
-2. Only tweets urls have been processed
+2. Only tweets urls have been processed excluding media and source url
 3. List of unique urls have been displayed not all
 4. No media item or elongated urls are required
 
