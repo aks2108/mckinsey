@@ -45,7 +45,7 @@ Total number of list_of_urls_in_tweets :  14
 Total number of unique list_of_urls_in_tweets :  12
 
 -------------------------------------------------------------------------------------------------------
-Program 1 : 
+Program 2 : 
 
 Used Counter function of the collection class A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.
 
