@@ -78,7 +78,7 @@ Output :
 
 C:\Python27>python question_2__array_frequency.py
 
-Please enter an array of integers in the form (ex:[2,3,5,3]) :[1,2,22,45,3,5,5,5]
+PPlease enter an array of integers in [x,y,z] format :[1,2,22,45,3,5,5,5]
 
 Elements with frequencies highest to lowest are: [(5, 3), (1, 1), (2, 1), (3, 1), (45, 1), (22, 1)]
 
