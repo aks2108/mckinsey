@@ -10,20 +10,24 @@ Detailed description
 ------------------------------------------------------------------------------------------------------------------
 Program 1 : 
 
-This question is solved using twitter_text library which gives entities from a twitter text. This program first takes a hash tag from the user by command prompt and then using the same searches first 100 recent tweets and stores into a list . This is then operated on extractor class to get urls. The given list of urls are not unique which will be stored again into a set which gives a unique set of urls.
+This question is solved using by two approaches 
+1. Using twitter_text library which gives entities from a twitter text 'extractor.extract_urls()'
+2. Using Regular expression operations
+This program first takes a hash tag from the user by command prompt and then using the same, searches first 100 recent tweets and stores into a list . Then the text of the tweets is operated on the 'findall' function corrosponding to a pattern which peculiar to urls which gives a list of urls present in the tweets. The list of urls stored again into a set which gives a unique  set of urls.
 
 Key properties :
 
-1. Used a twitter_text package to extract urls 'extractor.extract_urls()'
-2. The extractor class gives out all the urls including the media and source urls which was not needed in the program therefore. The tweet text was sent to the extractor class to get the correct result. 'extractor = twitter_text.Extractor(tweet_text)' instead of 'extractor = twitter_text.Extractor(search_result['results'])'
+1. Used regular expression class 're'
+2. The pattern used is ('(https?://\S+)', text['text']) which means all the terms starting with https:// and make sure the terms in url are not matched further in the text if present
 3. Unique urls has been derived by putting the duplicate set of list into a set which takes unique values.
 4. The performance of the application is of the order O(n) and it is fast to process.
 
 Assumptions :
 
-1. In build twitter_text class was used 
+1. The urls starts with http:// and https://
 2. Only tweets urls have been processed
 3. List of unique urls have been displayed not all
+4. No media item or elongated urls are required
 
 Output :
 
