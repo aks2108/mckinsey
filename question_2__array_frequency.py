@@ -27,7 +27,7 @@ def calculate_frequency_of_elements(array):
    print "The array contains non-integer values, please check your input"
    sys.exit()									
      
- print "The list of elements in descending order of frequency :", frequency_of_elements.most_common()
+ print "The list of elements in descending order of frequency :", frequency_of_elements
  
  
  
