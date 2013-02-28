@@ -57,6 +57,7 @@ C:\Python27>python question_1__list_of_urls_tweets.py #budget
 Program 2 : 
 
 Used Counter function of the collection class A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.
+This class is ideal for maintaining < key, freq > pairs for hashable objects.
 
 Key Properties :
 
