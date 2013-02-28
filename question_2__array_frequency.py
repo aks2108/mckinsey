@@ -4,9 +4,8 @@
 # most often to least often (once) 
 #
 # Solution Approach : Used Counter function of the collection class 
-# A Counter is a dict subclass for counting hashable objects. 
-# It is an unordered collection where elements are stored as dictionary keys
-# and their counts are stored as dictionary values. 
+# This class is ideal for maintaining < key, freq > pairs for hashable objects.
+# 
 #
 #################################################################################
 
@@ -19,35 +18,33 @@ import sys
 # Function to calculate the frequency of elements and print them in sorted order 
 
 def calculate_frequency_of_elements(array):
- frequency_of_elements = Counter ()			   # Initializing a variable of type counter
-
-# Scanning the array to calculate frequency of each unique element and storing it in the variable
+ frequency_of_elements = Counter ()			   
 
  for element in array:
-  if not isinstance(element,basestring):       # To check if any element is a string
+  if isinstance(element,int):
    frequency_of_elements[element] +=1
   else:
-   print "The array contains string objects"
-   sys.exit()									# If there is a string element the program will stop and throws an error message
+   print "The array contains non-integer values, please check your input"
+   sys.exit()									
      
- print "The list of elements with frequencies highest to lowest are:",list(frequency_of_elements.keys())
+ print "The list of elements in descending order of frequency :", frequency_of_elements.most_common()
  
  
  
-# Main function to take input and intial type and empty set checks
+# Main function to take input and validate it
 def main():
   
- input_array_of_integers= []                                                                  # Define an empty list 
+ input_array_of_integers= []
  try:
-   input_array_of_integers = input("Please enter an array of integers :")					  # Ask input from the user
+   input_array_of_integers = input("Please enter an array of integers in [x,y,z] format :")
    
-   if isinstance(input_array_of_integers,list) and len(input_array_of_integers)!= 0:  		  # Check whether the input is empty or non list 
-       calculate_frequency_of_elements(input_array_of_integers)								  # If input is non empty list function to calculate the frequency is called
+   if isinstance(input_array_of_integers,list) and len(input_array_of_integers)!= 0:
+       calculate_frequency_of_elements(input_array_of_integers)
    else:
-	    print "empty list or type non an array "											  # If the input is empty or non list error message
+	    print "Your input doesn't seem to be an array. Are you sure you entered it correctly? eg input: [2,2,2,3,4]"
 		
  except :
-   print "error ! Try Again"                                                                  # Exception message if the entry is errorneous 
+   print "Sorry ! Your input doesn't seem to be valid. Please enter only integers. eg input: [2,2,2,3,4] "
    
 # Main function called
 if __name__ == "__main__":
