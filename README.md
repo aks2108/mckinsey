@@ -51,18 +51,18 @@ Used Counter function of the collection class A Counter is a dict subclass for c
 
 Key Properties :
 
-1.Fast and simple uses counter function of collection class.
-2.Takes values from the user and follow the following test cases :
+1. Fast and simple uses counter function of collection class.
+2. Takes values from the user and follow the following test cases :
   - One can enter only an array of integers
   - An empty array will throw error
   - A string element in the array will throw error
-3.Display elements with frequency in a sorted order
+3. Display elements with frequency in a sorted order
 
 Assumptions :
 
-1.The code displays elements with thier frequencies to facilitate better decision making
-2.The user is asked to enter an array of integers everything else will throw error
-3.Counter class is used from collection class.
+1. The code displays elements with thier frequencies to facilitate better decision making
+2. The user is asked to enter an array of integers everything else will throw error
+3. Counter class is used from collection class.
 
 Output :
 
