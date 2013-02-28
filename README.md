@@ -40,9 +40,10 @@ C:\Python27>python question_1__list_of_urls_tweets.py #budget
  Url 10 :  http://t.co/PDAjSmqKMC',
  Url 11 :  http://t.co/9ZrX08713u',
  Url 12 :  http://t.co/rBmtsPCLTm
-Total number of tweets :  100
-Total number of list_of_urls_in_tweets :  14
-Total number of unique list_of_urls_in_tweets :  12
+ 
+ Total number of tweets :  100
+ Total number of list_of_urls_in_tweets :  14 
+ Total number of unique list_of_urls_in_tweets :  12
 
 -------------------------------------------------------------------------------------------------------
 Program 2 : 
